@@ -1,0 +1,50 @@
+{
+  "name": "vaersaagod/tablemate",
+  "description": "The tables have turned, mate!",
+  "version": "1.0.0-alpha.1",
+  "type": "craft-plugin",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "craft-plugin",
+    "table",
+    "tablemaker",
+    "mate",
+    "field"
+  ],
+  "support": {
+    "docs": "https://github.com/vaersaagod/tablemate/blob/master/README.md",
+    "issues": "https://github.com/vaersaagod/tablemate/issues"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Værsågod",
+      "homepage": "https://www.vaersaagod.no"
+    }
+  ],
+  "require": {
+    "php": "^8.0.2",
+    "craftcms/cms": "^4.0.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "vaersaagod\\tablemate\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "TableMate",
+    "handle": "tablemate",
+    "changelogUrl": "https://raw.githubusercontent.com/vaersaagod/tablemate/master/CHANGELOG.md",
+  },
+  "config": {
+    "platform": {
+      "php": "8.0.2"
+    },
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "craftcms/plugin-installer": true
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<fieldset{{ attr({
+    class: 'tablemate-field',
+    style: field.columnsLabel or (field.columnsInstructions and field.instructions) ? 'padding-top:10px' : false
+}) }}>
+    {{ columnsField|raw }}
+    {{ rowsField|raw }}
+
+    {% for colId, column in columns %}
+        {% if column.type == 'select' %}
+            {{ hiddenInput("columns[#{colId}][options]", column.options|json_encode) }}
+        {% endif %}
+    {% endfor %}
+
+</fieldset>
